@@ -1,0 +1,482 @@
+body {
+    font-family: 'Dosis', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    background-size: 400% 400%;
+    animation: bgAnimation 20s infinite linear;
+}
+
+@keyframes bgAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.container-center {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Custom Navbar */
+.navbar {
+    background: linear-gradient(to bottom, #1A1A1A, #181818);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    color: #ff0000;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-links li {
+    margin-right: 20px;
+}
+
+.navbar-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.navbar-links li a:hover {
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+
+/* Apply the new animation to the .hero-section and .container-3-boxes */
+.hero-section {
+    background: linear-gradient(to bottom, #1A1A1A, #141414);
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+    background-size: 100% 200%; /* Adjust background-size for smooth movement */
+}
+
+.hero-text {
+    font-size: 36px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Container with 3 Boxes */
+.container-3-boxes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #0E0E0E;
+    padding: 50px 0;
+    position: relative;
+    overflow: hidden;
+    animation: bgAnimation 20s infinite linear;
+}
+
+.box {
+    background: linear-gradient(to right, #970000, #600202);
+    color: #fff;
+    font-size: 24px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    animation: shadowMove 3s infinite alternate;
+    
+}
+
+.box-icon {
+    font-size: 48px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.6;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.purchase-product-container {
+    display: flex;
+    background-color: #121212;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 50px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.product {
+    /* Styles for regular products */
+    width: calc(33.33% - 20px); /* Adjust width to fit three products in one line with spacing */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+}
+
+
+
+.comparison {
+margin: 0;
+  font-size: 24px;
+  font-family: 'Dosis', sans-serif;
+  color: #fff; /* White text color */
+  align-items: center; /* Vertically align elements in the center */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+
+}
+
+
+
+/* Styles for the product label */
+.product-label {
+  /* Styles for the product label */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff0000;
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.buy-button {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #e50000;
+    transform: scale(1.05);
+}
+
+.subheader {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ff0000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    animation: pulseAnimation 2s infinite;
+}
+
+@keyframes pulseAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.box-bg-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #ff0000, #00ff00);
+    background-size: 200% 200%;
+    animation: bgAnimation 15s infinite linear reverse;
+}
+
+.product {
+  /* Your existing styles for the product container */
+  background: linear-gradient(to right, #360000, #660000);
+  color: #fff;
+  font-size: 18px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  margin: 20px;
+  width: 300px;
+  text-align: center;
+  position: relative; /* Set the container to be a positioning context */
+}
+
+.product h2 {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.product p {
+    margin-top: 15px;
+}
+
+/* About Us */
+.about-us {
+    background: linear-gradient(to bottom, #1A1A1A, #141414);
+    text-align: center;
+    padding: 100px 0;
+    animation: bgAnimation 20s infinite linear;
+
+}
+
+.about-us h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.about-us p {
+    font-size: 18`px;
+}
+.container-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px; /* Set the desired height for the button container */
+}
+
+
+
+.video-container {
+  display: flex;
+  justify-content: center;
+}
+
+.video {
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* White drop shadow */
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+  width: 500px; /* Increase the width to make the box bigger */
+}
+
+video {
+  width: 100%;
+  max-width: 100%; /* Ensure the video fits within the container */
+  height: auto; /* Maintain the aspect ratio of the video */
+}
+
+
+.centered-button {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.centered-button i {
+  margin-right: 10px; /* Adjust the spacing between icon and text */
+}
+
+/* Dark theme for modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background */
+}
+
+.modal-content {
+  background-color: #222; /* Dark background color */
+  color: #fff; /* White text color */
+  padding: 20px;
+  width: 100%;
+  margin: 100px auto; /* Center the modal */
+  border-radius: 5px;
+    animation: bgAnimation 20s infinite linear;
+
+}
+
+.close-button {
+  background-color: #555; /* Dark gray background color for the close button */
+  color: #fff; /* White text color for the close button */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  float: center;
+}
+
+
+.ha {
+    font-family: 'Bungee spice';
+    animation: lights 5s 750ms linear infinite;
+    transition: font-size 0.5s ease;
+}
+
+.ha:hover {
+    font-size: 42px;
+    transition: font-size 0.5s ease;
+}
+
+/* Fonts for headers and texts */
+h2, h3 {
+    font-weight: 700;
+    font-family: 'Dosis', sans-serif;
+}
+
+h2 {
+    font-size: 24px;
+    transition: transform 0.5s ease;
+}
+
+h2:hover, p:hover {
+    transition: transform 0.5s ease;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* Additional hover animation for boxes */
+.box:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    background-color: #555;
+    transition: transform 0.3s ease;
+}
+
+@keyframes shadowMove {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+    }
+}
+
+@keyframes lights {
+  0% {
+    color: hsl(20, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(20, 100%, 50%, 0.2),
+      0 0 0.125em hsla(20, 100%, 60%, 0.3),
+      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      1em 0.125em 0.5em hsla(20, 100%, 60%, 0);
+  }
+  
+  30% { 
+    color: hsl(20, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(20, 100%, 50%, 0.5),
+      0 0 0.125em hsla(20, 100%, 60%, 0.5),
+      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      0.5em 0.125em 0.25em hsla(20, 100%, 60%, 0.4);
+  }
+  
+  40% { 
+    color: hsl(20, 100%, 95%);
+    text-shadow:
+      0 0 1em hsla(20, 100%, 50%, 0.5),
+      0 0 0.125em hsla(20, 100%, 90%, 0.5),
+      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+      0.25em 0.125em 0.125em hsla(20, 100%, 60%, 0.4);
+  }
+  
+  70% {
+    color: hsl(20, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(20, 100%, 50%, 0.5),
+      0 0 0.125em hsla(20, 100%, 60%, 0.5),
+      0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      -0.5em 0.125em 0.25em hsla(20, 100%, 60%, 0.4);
+  }
+  
+  100% {
+    color: hsl(20, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(20, 100%, 50%, 0.2),
+      0 0 0.125em hsla(20, 100%, 60%, 0.3),
+      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      -1em 0.125em 0.5em hsla(20, 100%, 60%, 0);
+  }
+}
+
+
+
+#symbols {
+  text-align: center;
+}
+#symbols a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  font-size: 48px;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #ff0000, #ff5500);
+  color: #fff;
+  text-decoration: none;
+}
+
+#symbols a i {
+  display: block;
+}
+
+#symbols a:hover {
+  opacity: 0.8;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red; 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #8D0101; 
+}
+
